@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BDP - Pelatihan Git 2015</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bima Data Pratama</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-color: #C62828">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Sesi 1 - C</h1>
+                        <h2 class="subheading">Cara Kerja Git</h2>
+                        <span class="meta">Versioning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Cara Kerja Git : <em>Versioning</em></h2>
+
+                    <p>
+                        Kita mulai dari bagian <em>Versioning</em> (mengontrol perubahan file).
+                        Ok, sekarang ceritanya kita punya satu folder TUGAS_DESWEB berisi file website statis (HTML, CSS, JS).
+                        Semua file ini masih kosong melompong.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/folder_desweb_1.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Folder berisi file HTML, CSS, dan JS</span>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/indexhtml_1.png" alt="">
+                    </a>
+                    <span class="caption text-muted">File index.html masih kosong.</span>
+                    <p id="git-init">
+                    Folder di gambar di atas hanyalah folder biasa. Kita akan sulap folder tersebut supaya semua perubahan-perubahan dari tiap file bisa di monitor.
+                    Cuss, pasang git di folder TUGAS_DESWEB.
+                    </p>
+
+
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/folder_desweb_2.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Git sudah dipasang di folder TUGAS_DESWEB</span>
+
+                    <p id="git-repo">
+                        Sekarang, semua perubahan yang kamu buat di semua file di folder TUGAS_DESWEB bakal tercatat di database Git. 
+                        Itu di folder '.git' itu. Semuanya bakal dicatat disitu. 
+                    </p>                    
+
+                    <p>
+                       Lanjut, kita coba edit file 'index.html' yang tadinya kosong jadi gini.  
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/indexhtml_2.png" alt="">
+                    </a>
+                    <span class="caption text-muted">File index.html berubah!</span>
+
+                    <p>
+                        Saat kamu klik tombol save di text editor kesayanganmu, 
+                        Git bakal tau kalau file index.html itu berubah, yang tadinya kosong, sekarang sudah ada isinya.
+                        Perubahan ini dicatet di perubahan sementara dulu sama Git, belum disimpen sebagai perubahan final database dia. 
+                        <br/> Kenapa? Karena kamu belum bilang ke Git kalau kamu udah selesai sama kerjaan kamu. 
+                        Barangkali masih ada file lain yang masih mau kamu edit? 
+                        Nanti aja sekalian kalau udah selesai kerjanya atau kalau mau dilanjut nanti lagi, baru simpen deh perubahannya di database git. 
+                        <blockquote>
+                                    <strong>Siswo</strong>: Kenapa gak setiap filenya berubah Git nya otomatis nyimpen ke database aja sih mas?
+                                <br/>
+                                    <strong>Masnya</strong>: Otomatis disimpen kok, cuma belom final aja disimpennya..
+                                <br/>
+                                    <strong>Siswo</strong>: Belom final?
+                                <br/>
+                                    <strong>Masnya</strong>: Iya, jadi gini lo, ibarat kamu belanja banyak di supermarket. 
+                                    Kamu pasti masukin barang-barangnya dulu ke keranjang belanja kamu kan?
+                                    Nanti bayarnya di kasir..
+                                <br/> 
+                                    <strong>Siswo</strong>: Ohh... kalau setiap saya masukin barang ke keranjang terus duit saya langsung ngurang repot juga ya..
+                                <br/>
+                                    <strong>Masnya</strong>: Nah betul, wo.. 
+                        </blockquote>
+                        Jadi gitu, Git punya dua status perubahan file. Perubahan Sementara dan Perubahan Final.
+                        Walaupun bukan berarti setiap kamu rubah file, duit kamu ngurang, tapi analoginya mirip banget.
+                        Biaya yang diperlukan buat menyimpan semua perubahan secara otomatis itu mahal. 
+                    </p>
+                    <p>
+                        Misal, kamu cuma edit baris 'Hello World' jadi 'Hello World.' cuma nambah satu karakter titik.
+                        Terus kamu save, lalu Git otomatis simpen data perubahannya. 
+                        Padahal kamu belum selesai, masih ada banyak yang bakal dirubah. 
+                        Selesai nanti, Git bakal simpan banyak perubahan yang sebenarnya kamu ga perlukan.
+                        Coba nanti kalau kamu mau undo perubahan filenya dan daftar perubahan filenya sejibreg. Pasti bingung.
+                        <br/>     
+                    </p>
+
+                    <p id="git-staging">
+                        Nah sejauh ini, di catatan perubahan sementaranya Git itu kira-kira seperti ini jadinya.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/ceritanya_staging.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Belom final nih! Masih sementara doang.</span>
+
+                    <p>
+                        Sekarang mari kita bikin perubahan-perubahan sementara jadi final. 
+                        Mari kita suruh Git buat setor perubahan-perubahan tadi jadi final.
+                        Git, finalkanlah perubahan-perubahan sementara itu. 
+                        <br>
+                        <p class="text-center">
+                            <strong style="font-family: monospace"><em>Baik Boss.</em></strong>                                                        
+                        </p>
+                    </p>
+
+                    <p id="git-commit">
+                        Nah sudah kita suruh Git buat finalkan semua perubahan sementara tadi kan.
+                        <br>
+                        <ul class="text-center">
+                            <li>
+                                <strong style="font-family: monospace"><em> Ehm, Boss?</em></strong>                                                                                        
+                            </li>
+                            <li>
+                                    Ya, Git..kenapa? Sudah difinalkan kan itu perubahannya?                                                        
+                            </li>
+                            <li>
+                                <strong style="font-family: monospace">
+                                    <em>Iya, ini mau boss. Ada catetan buat perubahan final yang ini boss?</em>
+                                </strong>                                                              
+                            </li>
+                            <li>
+                                    Oh.. iya lupa, catet ini <u>"Selesai ngedit index.html versi awal"</u>.                                                                                        
+                            </li>
+                            <li>
+                                <strong style="font-family: monospace">
+                                    <em>Ok siap, boss. Done.</em>
+                                </strong>                                                              
+                            </li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        Sekarang git sudah simpan perubahan-perubahan sementara tadi jadi perubahan final.
+                        Dan daftar perubahannya di reset lagi jadi kosong (Kecuali kita cuma set salah satu file ke perubahan final).
+                        <br/> Begini kira-kira daftar perubahan finalnya.                        
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/ceritanya_commits.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Udah final tuh.</span>
+
+                    <p>
+                        Lalu kita melanjutkan pekerjaan kita. 
+                        Kita edit lagi index.html, tambah kodingan style.css, tambah kodingan app.js.
+                        Git bakal mendeteksi perubahan-perubahan ketiga file tadi ke daftar perubahan sementara. 
+                        Misal file index.html sekarang jadi begini.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/indexhtml_3.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Pasang style.css dan app.js. Rubah content.</span>
+
+                    <p>
+                        Tahap-tahapnya sama persis seperti yang sudah dijelaskan sebelumnya. 
+                        <br/> Git mendeteksi perubahan file sementara, 
+                        kita kasih tau Git supaya perubahan file sementaranya jadi final, Git nanya catetannya apa, selesai.
+                    </p>
+                    <p id="git-diff">
+                        Sekarang coba scroll lagi ke atas, tinjau file index.html saat masih kosong. 
+                        Lalu saat kita tambahkan kode HTML ke file index.html. 
+                        <br>
+                        <strong>Git mendeteksi dari awalnya 0 baris berubah jadi 11 baris. 
+                        Perubahan yang disimpan itu jadi seluruh baris.
+                        </strong> 
+                        <br/> Lalu saat kita edit lagi file index.html , 
+                        perhatikan sekarang file index.html jadi punya 16 baris kode.
+                        <p class="text-center">
+                        <strong>
+                            Apakah git menyimpan perubahan dari keseluruhan 16 baris kode? 
+                        </strong>
+                        </p>    
+                    </p>
+                    <p>
+                        Jawabannya, tidak. Git membandingkan file index.html 
+                        <strong>versi sekarang</strong> dengan file index.html <strong>versi lama</strong> (sebelum 16 baris). 
+                        <br/>Betul begitu, Git?
+                    </p>
+
+                    <p class="text-center">
+                        <strong style="font-family: monospace">
+                                    <em>Betul Boss, begini hasil perbandingannya.</em>
+                        </strong> 
+                    </p>
+                    <a href="#">
+                        <img class="img-responsive" src="img/indexhtml_diff.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Perbandingan perubahan file index.html versi lama dan versi baru.</span>
+
+                    <p>
+                        Git hanya menyimpan perubahan perbaris kode. 
+                        Misal dari file index.html tadi yang kamu edit hanya baris ke 4-9, baris ke 12-13, dan 
+                        menambah 5 baris. 
+                        Maka hanya perubahan pada blok-blok baris itu saja yang dicatat oleh Git dan disimpan ke daftar perubahan baik sementara ataupun final.
+                    </p>
+
+                    <p id="git-branch">
+                        Sekarang misal kamu sudah selesai mengerjakan tugas desweb ini.
+                        Tapi kamu masih penasaran karena ada fitur yang bisa ditambahkan 
+                        untuk mempercantik hasil tugas kuliah desweb kamu. 
+                        Masalahnya kode kamu sekarang sudah tidak ada bugs, dan semua sudah memenuhi deskripsi tugas.
+                        Kamu takut kalau kamu rubah lagi kodenya, nanti rusak dan susah mengembalikan ke versi kode yang sudah selesai sebelumnya.
+                        Kalau masih sedikit perubahannya ya tinggal <em>Undo</em> saja. 
+                        Kalau perubahannya banyak dan sudah tidak mungkin di <em>Undo</em>? Gimana?
+                    </p>
+
+                    <p>
+                        Solusinya kamu tinggal simpan perubahan final versi kode yang sudah lengkap dan aman. 
+                        Lalu kamu buat daftar perubahan final baru dengan judul lain. <br>
+                        Secara default, Git punya daftar perubahan final dengan judul <b>'Master'</b>. Tapi kamu bisa punya banyak versi daftar perubahan final.
+                    </p>
+                    <p> Untuk masalah ini kamu coba buat daftar perubahan final yang baru dengan judul 'experimental' berdasarkan daftar perubahan final versi 'Master'. Jadi perubahan-perubahan final versi 'Master' sudah termasuk di daftar perubahan final versi 'experimental'. <strong>Ini seperti membuat cabang baru.</strong> 
+                    <br/>Gambarannya seperti ini.
+                    </p>
+                    <a href="#">
+                        <img class="img-responsive" src="img/branching.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Bercabang!.</span>
+                    </p>
+                    <p id="git-checkout"> 
+                        Kalau hasil experimen nya bagus. Tinggal gabungkan daftar perubahan final versi 'experimental' ke versi 'Master'. Kodingan hasil experimen akan muncul atau menimpa kodingan versi terakhir di daftar perubahan final versi 'Master'.
+                        <br> Kalau gagal? Tenang, tinggal kembali ke daftar perubahan final versi 'Master'. Git akan mengembalikan kodingan kamu ke versi terakhir yang kamu simpan di daftar perubahan final versi 'Master'. 
+                    </p>
+
+                    <p>
+                        <h4 class="text-center">Daftar Istilah</h4>    
+                    </p>
+                    <div class="list-group">
+                      <a href="#git-init" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">init</h4>
+                        <p class="list-group-item-text">
+                            Waktu kamu mau mulai buat repository git di folder kerjaan kamu.</p>
+                      </a>
+                      <a href="#git-repo" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">local repository</h4>
+                        <p class="list-group-item-text">
+                            Database perubahan-perubahan file kodingan kamu, baik yang sementara ataupun yang final.</p>
+                      </a>
+                      <a href="#git-staging" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">staging</h4>
+                        <p class="list-group-item-text">
+                            Daftar perubahan file sementara, belum final.</p>
+                      </a>
+                      <a href="#git-commit" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">commit</h4>
+                        <p class="list-group-item-text">
+                            Daftar perubahan file sementara tadi, difinalkan.</p>
+                      </a>
+                      <a href="#git-branch" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">branch</h4>
+                        <p class="list-group-item-text">
+                            Daftar perubahan final, bisa buat banyak versi daftar.</p>
+                      </a>
+                      <a href="#git-diff" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">diff</h4>
+                        <p class="list-group-item-text">
+                            Perbandingan perubahan file versi final terakhir, dengan versi yang baru dirubah.</p>
+                      </a>
+                      <a href="#git-checkout" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">checkout</h4>
+                        <p class="list-group-item-text">
+                            Kembalikan kode versi final tertentu.</p>
+                      </a>
+                    </div>
+                    <p>
+                        Seperti itulah cara Git <em>Versioning</em> bekerja. 
+                        Intinya Git dapat menyimpan setiap versi dari file yang sudah kamu edit. 
+                        Setelah paham bagian <em>Versioning</em> kita lanjut ke bagian <em>Workflow</em>. 
+                        Di bagian ini kami akan jelaskan bagaimana Git bisa digunakan untuk mengerjakan tugas kelompok.
+                        <ul>
+                            <li>
+                                <a href="pengenalan-git-d">Cara Kerja Git : <em>Workflow</em></a>             
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
