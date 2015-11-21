@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BDP - Pelatihan Git 2015</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bima Data Pratama</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">2015</a>
+                    </li>
+            </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-color: #C62828">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Sesi 1 - D</h1>
+                        <h2 class="subheading">Cara Kerja Git</h2>
+                        <span class="meta">Workflow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Cara Kerja Git : <em>Workflow</em></h2>
+
+                    <p>
+                        Di bagian sebelumnya kamu sudah dijelaskan tentang bagaimana 
+                        Git menyimpan semua daftar perubahan final  yang sudah kamu edit.
+                        Di bagian ini akan dijelaskan bagaimana caranya daftar perubahan 
+                        final hasil pekerjaan kamu, bisa digabungkan dengan hasil pekerjaan anggota tim kamu. 
+                    </p>
+
+                    <p id="git-remote-repo">
+                        Di bagian sebelumnya, setelah kita <a href="pengenalan-git-c.html#git-init">memulai Git di Folder TUGAS_DESWEB </a>, Git akan membuat folder database berjudul '.git'.
+                        Folder ini akan berisikan daftar-daftar perubahan final dari hasil pekerjaan kita. 
+                        Selanjutnya kita akan simpan database ini ke server, 
+                        supaya anggota tim kita bisa menduplikasi database Git TUGAS_DESWEB ke komputer masing-masing.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/remote_repo.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">Ceritanya database Git TUGAS_DESWEB udah diupload ke server. 
+                    <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow">(source picture)</a></span>
+
+                    <p id="git-clone">
+                        Selanjutnya anggota tim kamu akan menduplikasi database Git TUGAS_DESWEB ke komputer masing-masing.
+                    </p>
+                    <a href="#">
+                        <img class="img-responsive" src="img/clone_repo.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">Anggota tim menduplikasi database Git TUGAS_DESWEB dari server. <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow">(source picture)</a></span>
+
+                    <p id="git-push"> 
+                        Selanjutnya kamu dan anggota tim kamu akan bekerja di masing-masing komputer. 
+                        Alur kerja yang dilakukan di masing-masing komputer sama seperti yang dijelaskan di <a href="pengenalan-git-c.html">sesi sebelumnya</a>. <br/>
+                        Bedanya adalah, setelah selesai menyimpan perubahan final. 
+                        Kamu akan mengupload daftar perubahan final terbaru ke database Git TUGAS_DESWEB di server. 
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/push.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">Setor daftar perubahan final ke database Git TUGAS_DESWEB di server. <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow">(source picture)</a></span>
+                    
+
+                    <p id="git-pull">
+                        Saat ini data perubahan final di database Git di komputer kamu sama persis 
+                        dengan yang ada di server. 
+                        <br/>Sedangkan data perubahan final di komputer anggota tim kamu yang lain berbeda.
+                        Untuk menyamakan, anggota tim kamu perlu menarik data perubahan final yang baru saja kamu upload, ke komputer masing-masing.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/pull.svg" alt="">
+                    </a>
+                    <span class="caption text-muted">Anggota tim menarik daftar perubahan final terbaru dari database Git TUGAS_DESWEB di server. <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/centralized-workflow">(source picture)</a></span>
+
+                    <p>
+                        Anggota tim kamu juga dapat mengupload daftar perubahan final hasil pekerjaan masing-masing.
+                        Kamu dapat menggabungkan hasil pekerjaan mereka ke kodingan kamu dengan menarik daftar perubahan final terbaru dari database setelah anggota tim kamu selesai mengupload daftar perubahan final mereka ke database Git TUGAS_DESWEB di server.  
+                    </p>
+
+                    <p>
+                        Ini adalah versi sederhana dari alur kerja (Workflow) yang bisa diterapkan saat menggunakan 
+                        Git untuk kerja kelompok. Alur kerja ini cukup untuk memfasilitasi
+                         proyek pengembangan software skala kecil, dengan jumlah anggota tim yang kecil pula.
+                         <br/>
+                         Semua anggota tim menggunakan <strong>satu versi daftar perubahan final yang sama</strong>.
+                         Dan progress pekerjaan <strong>cenderung bersifat serial</strong>. 
+                         Ada kalanya kamu harus menunggu pekerjaan anggota tim yang lain selesai agar kamu bisa melanjutkan pekerjaan bagian kamu.
+                    </p>
+
+                    <p>
+                        Terus gimana dong? Supaya semua anggota tim bisa bekerja secara paralel, 
+                        kamu dapat mengikut Workflow yang selama ini kami terapkan di kantor kami.
+                        Workflow ini secra teknis mirip dengan workflow yang dijelaskan sebelumnya. 
+                        Tapi Supaya semua anggota tim bisa bekerja secara paralel kita perlu beberapa aturan atau konvensi yang harus diikuti oleh semua anggota tim. 
+                    </p>
+                    <div class="well">
+                        Aturan-aturannya adalah:
+                        <dl>
+                            <dt>Pembagian Tugas</dt>
+                            <dd>Misal berdasarkan contoh tugas desain web yang dijelaskan di sesi sebelumnya
+                            , bagi tugas ke tiga kelompok. Kelompok HTML, kelompok CSS, dan kelompok JS.
+                            </dd>
+                            <dt>Avoid Conflict</dt>
+                            <dd>Kelompok HTML hanya boleh mengedit file HTML, kelompok CSS hanya boleh mengedit file CSS, dan kelompok JS hanya boleh mengedit file JS.</dd>
+                            <dt>Bercabang</dt>
+                            <dd>Setiap kelompok punya daftar perubahan final versi masing-masing.</dd>
+                            <dt>Diktator</dt>
+                            <dd>Tentukan satu diktator yang bertugas untuk menggabungkan daftar perubahan final dari masing-masing versi ke daftar perubahan final versi 'Master'</dd>
+                        </dl>
+                    </div>
+                    <p>
+                        Misal contoh tugas Desain Web yang kita jelaskan sebelumnya itu adalah tugas kelompok.
+                        Maka Sang Diktator akan membuat database Git versi awal dan menguploadnya ke server.
+                        Jika pembagian tugas sudah ditetapkan ke masing-masing anggota tim. Setiap kelompok akan membuat daftar perubahan final versi kelompok masing-masing berdasarkan daftar perubahan final versi 'Master' yang baru diupload oleh Sang Diktator.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/bdp_workflow_1.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Tiga daftar perubahan final baru berdasarkan versi 'Master'</span>
+
+                    <p>
+                        Setelah daftar perubahan final untuk masing-masing kelompok sudah dibuat,
+                        semua anggota tim dapat bekerja secara paralel. Bagian HTML bekerja mengedit file HTML, 
+                        bagian CSS mengerjakan desain tampilan, dan bagian JS mengerjakan kode javascript.
+                        <br/>Setiap masing-masing kelompok merasa pekerjaannya sudah bisa digabungkan.
+                        Sang Diktator akan turun tangan untuk menggabungkan daftar perubahan final masing-masing kelompok ke daftar perubahan final versi 'Master' di server.
+                    </p>
+
+                    <a href="#">
+                        <img class="img-responsive" src="img/bdp_workflow_2.png" alt="">
+                    </a>
+                    <span class="caption text-muted">Alur daftar perubahan final setelah digabungkan dengan versi 'Master'</span>
+
+                    <p>
+                        <h4 class="text-center">Daftar Istilah</h4>    
+                    </p>
+                    <div class="list-group">
+                      <a href="#git-remote-repo" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">remote repository</h4>
+                        <p class="list-group-item-text">
+                            Database daftar perubahan file Git, tapi ada di server.</p>
+                      </a>
+                      <a href="#git-clone" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">clone</h4>
+                        <p class="list-group-item-text">
+                        Menduplikasi remote repository (yang ada di server) ke local repository (di komputer kamu).
+                        </p>
+                      </a>
+                      <a href="#git-push" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">push</h4>
+                        <p class="list-group-item-text">
+                            Menyamakan daftar perubahan file versi terakhir dari local repository ke remote repository</p>
+                      </a>
+                      <a href="#git-pull" class="list-group-item">
+                        <h4 class="list-group-item-heading text-center">pull</h4>
+                        <p class="list-group-item-text">
+                            Menyamakan daftar perubahan file versi terakhir dari remote repository ke local repository.</p>
+                      </a>                      
+                    </div>
+                    <p>
+                        And that's how you can work with your team using Git!
+                        <br/>Sekarang mari kita implementasikan menggunakan tools dan kode beneran!
+                        <ul>
+                            <li>
+                                <a href="implementasi-gitlab.html">Implementasi : <em>Gitlab</em></a>             
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="http://twitter.com/bimadata">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; BDP 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
