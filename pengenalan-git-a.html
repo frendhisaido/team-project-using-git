@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BDP - Pelatihan Git 2015</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bima Data Pratama</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">2015</a>
+                </li>
+            </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-color: #C62828">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Sesi 1 - A</h1>
+                        <h2 class="subheading">Pengenalan Git</h2>
+                        <span class="meta">Kenapa pake Git?</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Sebuah Dongeng</h2>
+                    
+                    <p>
+                    Di sesi pertama ini kamu akan kami kenalkan dengan git. Buat kamu yang merasa sudah kenal dengan Git, bisa langsung melanjutkan ke sesi 2. 
+                    Tapi kami punya sebuah dongeng menarik yang dapat digunakan untuk mengundang teman-teman setimmu untuk mulai menggunakan Git.
+                    Baik, sebelum memulai perkenalan Git, perkenankan kami menceritakan sebuah dongeng tentang 4 Mahasiswa dari sebuah universitas di Bandung.</p>
+                    <blockquote>
+                        Cerita ini hanya fiktif belaka. Jika ada kesamaan nama tokoh, tempat kejadian ataupun cerita, itu adalah kebetulan semata dan tidak ada unsur kesengajaan.
+                    </blockquote>
+                    <p>
+                        Dahulu kala, 4 mahasiswa jurusan ilmu komputer bekerja sama membuat aplikasi untuk tugas kuliah mereka. 
+                        Mereka adalah Siswa (Semester 7), Siswi (Semester 7), Siswo (Semester 9), dan Siswu (Semester 11). Siswa dipilih sebagai ketua kelompok. 
+                        Tidak ada alasan khusus dibalik dipilihnya Siswa sebagai ketua kelompok. 
+                        Semua beranggapan karena jika diurut secara alfabetik, Siswa berada di urutan pertama.                          
+                    </p>
+                    <p>
+                        Mereka ditugaskan membuat aplikasi sistem informasi pendataan keluarga di kelurahan berbasis web, menggunakan framework CodeIgniter 2.
+                        Terkejut mereka mendengar judul tugas ini. 
+                        Tapi semua bernafas lega setelah dosen menjelaskan bahwa mereka tidaklah harus mendata semua manusia di suatu kelurahan. 
+                        "Untunglah, kalau benar harus mendatangi semua rumah di kelurahanku, kapan aku lulus?" kata Siswu sambil mengusap-usap dadanya.
+                    </p>
+                    <p>
+                        Deadline ditetapkan 1 bulan lagi. Siswa tahu benar dia harus memobilisasi tim-nya dari mulai detik ini. 
+                        Selesai jam kuliah, Siswa langsung mengumpulkan tim-nya untuk rapat perdana.
+                        "Ok, Sis, kamu.." belum selesai kalimat dari mulut Siswa, "Iya, Wa?" Siswi, Siswo, dan Siswu menanggapi bersamaan. 
+                        Siswa baru ingat nama mereka berawalan sama. "Maksudku, Wi.. kita nanti mengerjakan bagian backend, database dan controller." Siswi mengangguk.
+                        "Kang Wo, dan Kang Wu.. tolong handle bagian tampilan, frontend, termasuk form untuk entry data. Bagaimana, kang?" 
+                        Siswo langsung mengiyakan, namun Siswu yang masih sibuk dengan smartphone-nya belum menanggapi. 
+                        "Kang Siswu, gimana? Handle bagian frontend ya?" lalu disambut dengan santai oleh Siswu "Siap..".
+                        "Baiklah, Siswi tolong ambil bahan tugasnya di Pak Dosen. Kita butuh dokumen spesifikasi sistem untuk memulai perancangan database. 
+                        Kita berkumpul lagi di kampus besok lusa ya." Semua mengangguk sambil bersiap pulang ke kosan masing-masing.
+                    </p>
+                    <p>
+                        Setelah rapat pertama, tim Siswa hanya lengkap berkumpul 1 kali. Sedangkan deadline pengumpulan tugas tinggal 2 hari lagi.
+                        Karena sulit mencocokkan waktu, Siswa seringkali hanya mengerjakan tugas dengan Siswi saja. Itupun karena jadwal kuliah mereka sama. 
+                        Akhirnya Siswa memutuskan agar tim berkumpul di sebuah cafe di dekat kampus untuk menyelesaikan tugas kuliah ini. 
+                        Pesan pendek dikirimkan ke semua anggota tim.
+                        <blockquote>
+                            "Harap berkumpul di Cafe Bahari pukul 13:00 hari ini, deadline tugas kita tinggal 2 hari lagi. 
+                            Mohon maaf jika tidak hadir, saya akan melaporkan siapa saja yang tidak berkontribusi di kelompok ini. Terima Kasih."
+                        </blockquote>
+                        Pukul 13:15 di Cafe Bahari. "Kang Wo, ini backend-nya sudah hampir selesai. Bagaimana dengan bagian frontend-nya? Oh iya, kang Siswu mana ya?"
+                        tanya Siswa. "Oh Siswu sebentar lagi mungkin datang. Ini saya sudah kerjakan bagian tampilan form entry data. Saya email saja ke kamu, Wa?" 
+                        Siswo sudah siap-siap membuka tab compose new email di browsernya. "Jangan, kang. Di-copy saja ke flashdisk Siswi, semua file dikumpulkan di flashdisk Siswi." 
+                        Siswi lalu mencabut flashdisk dari laptopnya. "Iya, kang, nanti semua hasil pekerjaan saya yang gabung" Siswa mengamini. 
+                    </p>
+                    <p>
+                        Tim Siswa lalu melanjutkan bagian pekerjaannya masing-masing. Tapi tak lama setelah itu, 
+                        "Kang Wo, file pekerjaan Kang Siswo yang di folder sispenkelkel.. berweb.. kan?" Raut muka Siswa berubah setelah mendengar Siswi menanyakan hal ini ke Siswo.
+                        "Iya, di folder sispenkelkelberweb.. kenapa Wi?" Siswo heran, takut, dan mulai merasa bersalah. 
+                        "Kenapa Wi? Virus, wi?" Siswa langsung tanggap. "Kayaknya sih, ini soalnya file di flashdisk aku semuanya jadi shortcut..".
+                        "Astaga.." Mimpi buruk Siswa jadi kenyataan. "Padahal saya udah pakai SKADAV loh, Wi.." hanya Siswo yang tahu Aplikasi Skadav di komputernya terakhir diupdate 6 bulan yang lalu. 
+                        "Ya sudah, kang, tolong kirim file hasil pekerjaan Kang Siswo ke email saya di siswa96@mgail.com. Siswi, coba cek file hasil pekerjaan kamu.." 
+                        Siswa tidak menyelesaikan kalimatnya setelah Siswi memperlihatkan layar laptopnya ke Siswa "Wi..semua file kamu jadi shortcut?" Siswa tidak percaya ini semua terjadi begitu cepat!
+                        "Wi, maaf, saya coba cari solusinya di google, barangkali file tugas kuliah kita masih bisa diselamatkan.." Siswo mencoba menebus kesalahannya. 
+                        "Percuma, kang. Sekarang lebih baik Kang Siswo Kirim file hasil pekerjan akang ke email saya. Saya coba 2 hari ini program ulang semua yang belum digabungkan di komputer saya".
+                        Hari itu berjalan sangat lambat. Siswu tak kunjung datang. Siswa dan Siswi akhirnya mengerjakan ulang program bagian backend yang selama ini sudah mereka kerjakan.                         
+                    </p>
+                    <p>
+                        Siswa dan Siswi akhirnya berhasil mengerjakan ulang kode mereka yang hilang di rusak virus. 
+                        Memang tak sesempurna yang dulu, sekadar cukup untuk dikumpulkan, dan dengan harapan dapat nilai cukup untuk lulus. 
+                        Karena Siswu terhitung ikut berkumpul 2 kali, Siswu tetap mendapatkan nilai dari tugas kuliah ini. 
+                        Dan benar saja nilai yang didapatkan jauh dari sempurna, bahkan mereka terancam harus mengulang kuliah ini tahun depan.
+                        Semua kecewa. Seharusnya semua tidak berakhir seperti ini. 
+                    </p>
+
+                    <p>Temukan solusinya di part selanjutnya -> <a href="pengenalan-git-b.html">Git : Distributed Version Control System</a>.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="http://twitter.com/bimadata">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; BDP 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BDP - Pelatihan Git 2015</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Bima Data Pratama</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">2015</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Sesi 3</h1>
+                        <h2 class="subheading">Implementasi : Sourcetree</h2>
+                        <span class="meta">Management Git.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <h4>Download dan pasang SourceTree kamu.</h4>
+                    <img class="img-responsive" src="img/screenshot/8. Halaman Utama Source Tree.PNG" alt="">
+                    <p>Sudahkah kamu menggunakan SourceTree hari ini? haha. Jika kamu belum mengenal SourceTree, aplikasi ini adalah Git dan Mercurial Client yang dibagikan secara gratis hanya untuk Windows dan Mac, jika kamu pengguna GNU/Linux jangan bersedih hati, kamu bisa menggunakan GitEye sebagai Git Clientnya. Download SourceTree kamu di https://www.sourcetreeapp.com/ dan install sesuai instruksi dari SourceTree tersebut.</p>
+                    <h4>Setting SourceTree</h4>
+                    <img class="img-responsive" src="img/screenshot/9. Settings Source Tree.PNG" alt="">
+                    <p>Jika kamu sudah menginstall SourceTree, sebaiknya kamu mengatur SSH Key yang sudah kamu punya pada sebelumnya. Kamu bisa mengatur SSH Client Configuration dengan file <i>id_rsa.pub</i> yang kamu miliki.</p>
+                    <h4>Clone Repo dari GitLab</h4>
+                    <img class="img-responsive" src="img/screenshot/10. Clone Repo.PNG" alt="">
+                    <p>Saatnya clone repo kamu yang sudah disetup sebelumnya dengan menggunakan SourceTree, pada materi sebelumnya terdapat url SSH pada halaman dashboard project, dengan menggunakan url SSH kita mengontrol repo yang ada di GitLab. <b>Source Path / URL</b> kamu isi dengan url SSH dari halaman project sebelumnya, dan <b>Destination Path</b> kamu isi dengan path folder dimana kamu akan menyimpan repo tersebut. Dan pada bagian <b>Bookmark</b>, form ini akan terisi otomatis, kamu bisa mengganti <b>Name</b> sesuai dengan yang kamu inginkan.</p>
+                    <h4>Tampilan Repo yang sudah diclone</h4>
+                    <img class="img-responsive" src="img/screenshot/11. After Clone Repo.PNG" alt="">
+                    <p>Jika kamu melakukan clone terhadap project yang baru memang tidak akan menampilkan apa-apa karena belum ada aktivitas dari project tersebut. Tapi nantinya jika kamu melakukan clone terhadap project yang sudah berjalan lama, akan menampilkan timeline commit terdahulu, dan akan menampilkan branch-branch.</p>
+                    <h4>Buat file readme</h4>
+                    <img class="img-responsive" src="img/screenshot/12. Create File readme.md.PNG" alt="">
+                    <p>Sebagai awal dari project biasanya kita membuat file readme, ritual awal ini bisa memberikan informasi kepada development lain untuk mengikuti instruksi didalam readme tersebut, tapi disini kita membuat readme sebagai contoh bagaimana proses remote repo berlangsung.</p>
+                    <h4>First Commit</h4>
+                    <img class="img-responsive" src="img/screenshot/13. First Commit.PNG" alt="">
+                    <p>Setelah kamu membuat file readme sebelumnya, kita kembali ke aplikasi Git Client SourceTree, SourceTree akan mendeteksi file mana saja yang dirubah oleh user pada bagian <b>Working Copy</b>, lalu kita akan melakukan staging file mana saja yang akan dipush, dalam hal ini kita akan melakukan staging terhadap file <i>Readme.md</i>. Setelah melakukan staging, kamu bisa menambahkan commit yang inputannya ada dipaling bawah, commit ini berguna untuk memberikan komentar terhadap file yang kita rubah.</p>
+                    <h4>Network Repo</h4>
+                    <img class="img-responsive" src="img/screenshot/14. Timeline Branch.PNG" alt="">
+                    <p>Setelah melakukan commit, network akan menampilkan hasil commit kita yang masih ada di lokal.</p>
+                    <h4>Push</h4>
+                    <img class="img-responsive" src="img/screenshot/15. Push.PNG" alt="">
+                    <p>Setelah semua pekerjaan kamu dirasa sudah cukup dan orang lain harus melihat hasil pekerjaan kamu, kamu harus melakukan PUSH. Jadi ibarat kamu ngumpulin tugas, kalau udah beres pasti kamu harus mengirimkannya kan? nah fasilitas PUSH ini adalah bagian proses mengumpulkan tugas tersebut. Jadi nantinya pekerjaan kamu akan tersimpan di Git dan teman kamu dapat melihat dan menggabungkannya. </p>
+                    <h4>Push Success</h4>
+                    <img class="img-responsive" src="img/screenshot/16. Sukses Push.PNG" alt="">
+                    <p>Ingat, Push harus sampai berhasil ya kaya gambar yang di atas.</p>
+                    <h4>Edit di Gitlab</h4>
+                    <img class="img-responsive" src="img/screenshot/17. Edit di Gitlab.PNG" alt="">
+                    <p>Kamu bisa langsung edit file nya di gitlab lhooo, biasa nya kalo lagi Urgent saat kamu lagi ga buka laptop kamu cuma pegang smartphone kesayangan kamu. Kamu bisa edit Codingan kamu melalui Gitlab. </p>
+                    <h4>Edit readme di Gitlab</h4>
+                    <img class="img-responsive" src="img/screenshot/18. Edit readme dari gitlab.PNG" alt="">
+                    <h4>Pull Repo</h4>
+                    <p>Pada pekerjaan team work kita harus bisa menginformasikan langkah-langkah penting untuk anggota team, terutama jika pada saat itu ada anggota baru di team kamu. Anggota team kamu hanya cukup membaca Readme lalu dia bisa bergabung dalam pekerjaan di team kamu. Nah itu lah pentingnya Readme. </p>
+                    <img class="img-responsive" src="img/screenshot/19. Pull dari origin.PNG" alt="">
+                    <p>Jika ada perubahan pada branch, kamu sudah seharusnya menggunakan fitur <b>Pull</b> pada aplikasi SourceTree, dengan menggunakan <b>Pull</b> kamu akan mengupdate kodingan di branch Master dengan kodingan terakhir kali di push ke branch tersebut.</p>
+                    <h4>Sukses pull</h4>
+                    <img class="img-responsive" src="img/screenshot/20. Sukses Pull dari Origin.PNG" alt="">
+                    <p>Jika kamu tidak memilii konflik source dengan hasil pull, maka akan menampilkan status sukses setelah melakukan <b>Pull</b>.</p>
+                    <h4>Network Repo</h4>
+                    <img class="img-responsive" src="img/screenshot/21. Timeline setelah di pull.PNG" alt="">
+                    <p>Setelah berhasil melakukan pull, maka network pada aplikasi SourceTree akan menampilkan commit terakhir yang di push pada repo server.</p>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="http://twitter.com/bimadata">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; BDP 2015</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
